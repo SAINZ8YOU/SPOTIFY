@@ -8,7 +8,7 @@ Fitur
 - Kontrol musik interaktif (Play/Pause).
 - Progress bar lagu yang berjalan secara otomatis.
 
-#Teknologi
+Teknologi
 - **HTML5** untuk struktur.
 - **CSS3** (Flexbox & Grid) untuk desain.
 - **JavaScript** untuk interaksi.
