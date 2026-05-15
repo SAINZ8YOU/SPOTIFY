@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Spotify Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fa-brands fa-spotify"></i> <span>Spotify</span>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li class="active"><i class="fa-solid fa-house"></i> Home</li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i> Search</li>
+                    <li><i class="fa-solid fa-lines-leaning"></i> Your Library</li>
+                </ul>
+            </nav>
+        </aside>
+        <aside class="sidebar">
+    <div class="side-box top-nav-side">
+        <ul>
+            <li class="active"><i class="fa-solid fa-house"></i> Home</li>
+            <li><i class="fa-solid fa-magnifying-glass"></i> Search</li>
+        </ul>
+    </div>
+
+    <div class="side-box library">
+        <div class="lib-header">
+            <i class="fa-solid fa-lines-leaning"></i> Your Library
+            <i class="fa-solid fa-plus add-icon"></i>
+        </div>
+        
+        <div class="lib-content">
+            <div class="playlist-item">
+                <img src="https://picsum.photos/seed/rock/50/50" alt="Playlist">
+                <div class="playlist-info">
+                    <p class="name">Saturn by YOU</p>
+                    <p class="type">Playlist • 45 lagu</p>
+                </div>
+            </div>
+
+            <div class="playlist-item">
+                <img src="https://picsum.photos/seed/lofi/50/50" alt="Playlist">
+                <div class="playlist-info">
+                    <p class="name">Suka2</p>
+                    <p class="type">Playlist • 120 lagu</p>
+                </div>
+            </div>
+
+            <div class="playlist-item">
+                <img src="https://picsum.photos/seed/pop/50/50" alt="Playlist">
+                <div class="playlist-info">
+                    <p class="name">MAU GALAU</p>
+                    <p class="type">Playlist • 50 lagu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+        <main class="content">
+            <header class="top-nav">
+                <div class="nav-arrows">
+                    <button><i class="fa-solid fa-chevron-left"></i></button>
+                    <button><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="user-actions">
+                    <button class="btn-premium">Explore Premium</button>
+                    <button class="btn-install"><i class="fa-regular fa-circle-down"></i> Install App</button>
+                </div>
+            </header>
+
+            <section class="playlist-section">
+                <h2>Made For YOU</h2>
+                <div class="card-grid">
+<div class="card">
+    <div class="img-container">
+        <img src="https://picsum.photos/seed/music/200/200" alt="Cover" class="cover-img">s
+        <div class="play-button">
+            <i class="fa-solid fa-play"></i>
+        </div>
+    </div>
+    <h4>Daily Mix 1</h4>
+    <p>Made for you by Spotify</p>
+</div>
+                </div>
+            </section>
+        </main>
+        <footer class="player">
+            <div class="now-playing">
+                <div class="song-img"></div>
+                <div class="song-desc">
+                    <p class="title">Terbuang dalam waktu</p>
+                    <p class="artist">Barasuara</p>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="playback-buttons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-solid fa-circle-play play-main" id="masterPlay"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-repeat"></i>
+                </div>
+                <div class="progress-bar">
+                    <span>1:20</span>
+                    <div class="bar-bg">
+                        <div class="bar-progress" id="progressBar"></div>
+                    <span>5:55</span>
+                </div>
+            </div>
+            <div class="volume-control">
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="volume-bar"></div>
+            </div>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
